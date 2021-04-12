@@ -13,7 +13,8 @@ public class Main {
         Parser parser = new Parser();
         String output = (new Main()).readRawDataToString();
         System.out.println(output);
-        System.out.println(parser.testPatternFind(output,"M\\w+k\\b"));
+        Milk.setMilkCount(parser.testPatternFind(output,"M\\w+k\\b"));
+        System.out.println(Milk.getMilkCount());
 
     }
 }
