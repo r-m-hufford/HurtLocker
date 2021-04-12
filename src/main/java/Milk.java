@@ -1,11 +1,11 @@
 public class Milk {
 
-    private static Integer milkCount;
+    private Integer milkCount;
 
 
     public Milk() {}
 
-    public static Integer getMilkCount() {
+    public Integer getMilkCount() {
         return milkCount;
     }
 
@@ -13,7 +13,7 @@ public class Milk {
         this.milkCount++;
     }
 
-    public static void setMilkCount(Integer newMilkCount) {
+    public void setMilkCount(Integer newMilkCount) {
         milkCount = newMilkCount;
     }
 }

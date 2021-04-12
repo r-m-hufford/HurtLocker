@@ -5,6 +5,11 @@ import java.util.regex.Pattern;
 
 public class Parser {
 
+    Integer milkCount = 0;
+    Integer cookieCount = 0;
+    Integer appleCount = 0;
+    Integer breadCount = 0;
+
     List<String> lines = new ArrayList<String>();
 
     public Integer testPatternFind(String dataToRead, String patternToFind) {
@@ -24,9 +29,6 @@ public class Parser {
         Matcher matcher = pattern.matcher(dataToRead);
         while(matcher.find()) {
             lines.add(matcher.group());
-        }
-        for (String line : lines) {
-            System.out.println(line);
         }
     }
 }
