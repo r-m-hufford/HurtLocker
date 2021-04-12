@@ -14,7 +14,7 @@ public class Main {
         String output = (new Main()).readRawDataToString();
         System.out.println(output);
         Milk.setMilkCount(parser.testPatternFind(output,"M\\w+k\\b"));
-        System.out.println(Milk.getMilkCount());
+        parser.capturingGroups(output);
 
     }
 }
