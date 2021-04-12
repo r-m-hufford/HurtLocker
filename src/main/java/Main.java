@@ -10,8 +10,10 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception{
+        Parser parser = new Parser();
         String output = (new Main()).readRawDataToString();
         System.out.println(output);
+        System.out.println(parser.testPatternFind(output,"M\\w+k\\b"));
 
     }
 }
