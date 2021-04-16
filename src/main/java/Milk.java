@@ -4,4 +4,10 @@ import java.util.regex.Pattern;
 
 public class Milk extends FoodItems{
 
+    private static Milk milk = new Milk();
+
+    private Milk() {}
+
+    public static Milk getInstance() {return milk;}
+
 }

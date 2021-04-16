@@ -4,8 +4,9 @@ import java.util.regex.Pattern;
 
 public class Cookies extends FoodItems{
 
-    public Cookies() {
+    private static Cookies cookies = new Cookies();
 
-    }
+    private Cookies() {}
 
+    public static Cookies getInstance() {return cookies;}
 }
